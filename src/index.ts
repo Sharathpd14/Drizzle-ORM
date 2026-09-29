@@ -4,7 +4,7 @@ import { createExpressApplication } from "./app/index.js"
 async function main() {
     try {
         const server = http.createServer(createExpressApplication())
-        const PORT:number = 3000
+        const PORT:number = 8080
 
         server.listen(PORT, ()=>{
             console.log(`Server is running on http://localhost:${PORT}`);
